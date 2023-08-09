@@ -2,19 +2,19 @@
     "users": [
       {
         "id": 1,
-        "name": "Suriya",
+        "name": "elava",
         "datetime": "June 01, 2023 12:29:36 PM",
         "skill": "HTML & CSS"
       },
       {
         "id": 2,
-        "name": "SK7",
+        "name": "kalai",
         "datetime": "June 01, 2023 12:29:36 PM",
         "skill": "JS"
       },
       {
         "id": 3,
-        "name": "US",
+        "name": "nivi",
         "datetime": "June 01, 2023 12:29:36 PM",
         "skill": "React"
       }
