@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #006fff;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #2d2d2d;
 }
+
 body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -22,12 +27,14 @@ body {
   display: flex;
   background-color: #1e1e1e;
 }
+
 #root {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .App {
   width: 100%;
   max-width: 800px;
@@ -38,18 +45,21 @@ body {
   border: 1px solid #333;
   box-shadow: 0px 0px 5px gray;
 }
+
 .Header,
 .Footer {
   width: 100%;
-  background-color: #006fff;
+  background-color: #ff4800;
   padding: 0.75rem;
   position: relative;
   text-align: center;
 }
+
 .Header h1 {
   font-size: 2rem;
   font-weight: 600;
 }
+
 .Header svg {
   font-size: 2rem;
   position: absolute;
@@ -57,13 +67,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .Footer {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .Nav {
   background-color: #1e1e1e;
 }
+
 .Nav ul {
   color: #fff;
   list-style-type: none;
@@ -71,9 +84,11 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .Nav li {
   font-size: 1.25rem;
 }
+
 .Nav li a {
   color: #fff;
   text-decoration: none;
@@ -83,6 +98,7 @@ body {
   padding: 1.25rem;
   transition: 0.3s;
 }
+
 .Nav li:hover a,
 .Nav li:focus a {
   text-shadow: 0 0 5px #006fff;
@@ -90,6 +106,7 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
 }
+
 .Home,
 .UserData,
 .NewUser,
@@ -102,12 +119,14 @@ body {
   overflow-y: auto;
   background-color: #fff;
 }
+
 .Home {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .UserData h1,
 .Missing h2,
 .Docs h2,
@@ -116,14 +135,17 @@ body {
   font-size: 1.75rem;
   font-weight: 500;
 }
+
 .Missing p,
 .Docs p {
   font-size: 0.9rem;
 }
+
 .newUserForm {
   display: flex;
   flex-direction: column;
 }
+
 .newUserForm input[type="text"],
 .newUserForm textarea {
   font-family: "Open Sans", sans-serif;
@@ -136,18 +158,22 @@ body {
   outline: none;
   transition: 0.3s;
 }
+
 .newUserForm textarea {
   height: 125px;
 }
+
 .newUserForm input[type="text"]:focus,
 .newUserForm textarea:focus {
   box-shadow: 0 0 3px #1e1e1e;
 }
+
 .newUserForm input[type="text"]::placeholder,
 .newUserForm textarea::placeholder {
   font-size: 1rem;
   letter-spacing: 1px;
 }
+
 .newUserForm button {
   margin-top: 1rem;
   border-radius: 10px;
@@ -161,54 +187,67 @@ body {
   outline: none;
   transition: 0.3s;
 }
+
 .newUserForm button:hover {
   background-color: #006fff;
   box-shadow: 0 0 5px #006fff;
   border-color: #1e1e1e;
   letter-spacing: 1px;
 }
+
 .newUserForm label {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 0.5rem;
 }
+
 .user {
   margin-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid lightgray;
 }
+
 .user h2 {
   font-size: 1rem;
   font-weight: 600;
 }
+
 .user p {
   font-size: 0.8rem;
 }
+
 .UserData .user a {
   text-decoration: none;
 }
+
 .UserData .user a,
 .UserData .user a:visited {
   color: #000;
 }
+
 .user:first-child {
   margin-top: 0;
 }
+
 .user:last-child {
   border-bottom: none;
 }
+
 .Date {
   font-size: 0.75rem;
   margin-top: 0.25rem;
 }
+
 .userSkill {
   margin: 1rem 0;
 }
+
 .Missing p,
 .UserPage p,
 .NewUser p {
   margin-top: 1rem;
 }
+
 button {
   border-radius: 5px;
   border: none;
@@ -220,42 +259,52 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
 .submitBtn {
   width: 200px;
   margin: 0 auto;
 }
+
 .deleteButton {
   background-color: #1e1e1e;
   transition: 0.3s;
 }
+
 .editButton {
   background-color: #006fff;
   transition: 0.3s;
 }
+
 .deleteButton:hover {
   box-shadow: 0 0 6px #1e1e1e;
   scale: 1.2;
 }
+
 .editButton:hover {
   box-shadow: 0 0 6px #006fff;
   scale: 1.2;
 }
+
 .Docs ul li {
   list-style: none;
   font-size: 0.9rem;
 }
+
 @media (max-width: 500px) {
   .Header h1 {
     font-size: 1.75rem;
     font-weight: 500;
   }
+
   .Nav li {
     font-size: 1rem;
   }
+
   .Nav li a {
     padding: 1rem;
   }
 }
+
 @media (max-width: 400px) {
   .Nav li a {
     padding: 0.5rem;
